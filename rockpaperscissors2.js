@@ -4,8 +4,8 @@ const playerMove = process.argv[2];
 // richtige Eingabe überprüfen!
 if (!playerMove || (playerMove !== 'rock' && playerMove !== 'paper' && playerMove !== 'scissors')) {
     console.log("Fehler: Bitte gib 'rock', 'paper' oder 'scissors' ein!");
-    console.log("Beispiel: node rockPaperScissors2.js rock");
-    process.exit(1); // Beendet das Programm sofort
+    console.log("Beispiel: node rockpaperscissors2.js rock");
+    process.exit(1);
 }
 
 
@@ -21,7 +21,7 @@ console.log(`Der Computer wählte: ${computerMove}`);
 // 3. GEWINNER ERMITTELN (Ausführlich mit if / else Statements)
 // Fall 1: Unentschieden
 if (playerMove === computerMove) {
-    console.log("Ergebnis: Unentschieden! 🤝");
+    console.log("Ergebnis: Unentschieden! ");
 }
 // Fall 2: Ich Gewinne
 else if (
@@ -29,9 +29,9 @@ else if (
     (playerMove === 'paper' && computerMove === 'rock') ||
     (playerMove === 'scissors' && computerMove === 'paper')
 ) {
-    console.log("Ergebnis: Du gewinnst! 🎉");
+    console.log("Ergebnis: Du gewinnst! ");
 }
-// Fall 3: sollten die vairanten von oben nicht kommen habe ich automatisch verloren!
+// Fall 3: sollten die varianten von oben nicht kommen habe ich automatisch verloren!
 else {
-    console.log("Ergebnis: Computer gewinnt! 🤖 (Du hast verloren)");
+    console.log("Ergebnis: Computer gewinnt! (Du hast verloren)");
 }
