@@ -1,12 +1,12 @@
 const choices = ['rock', 'paper', 'scissors'];
 
-// Spieler Auswahl aus Terminal
+// spielerauswahl
 const playerChoice = process.argv[2];
 
-// Computer zufällig
+// zufällige Auswahl des Computers
 const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-// Gewinner bestimmen
+// Ergebnis berechnen
 function getResult(player, computer) {
     if (player === computer) {
         return 'Draw!';
