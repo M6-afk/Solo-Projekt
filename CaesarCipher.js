@@ -30,4 +30,4 @@ console.log(`Verschlüsselt: ${result}`);
 
 //node CaesarCipher.js "WBS Kurs 2026!" 1
 //Original:     WBS Kurs 2026!
-//Verschlüsselt: xct lvst 2026!
+//Verschlüsselt: xct lvst 2026!!
